@@ -1,23 +1,28 @@
 <html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="search_style.css">
+	</head>
+
 	<body>
 
-			<form action="search_query_start.php" method="get">
+			<form id="prefix" class="field" action="search_query_start.php" method="get">
 			Stars with: <input type="text" name="search"><br>
-			<input type="submit" value="Search">
+			<input class="button" type="submit" value="Search">
 			</form>
 			
-		<br>
+
 		
-			<form action="search_query.php" method="get">
+			<form id="contains" class="field" action="search_query.php" method="get">
 			Contains: <input type="text" name="search"><br>
-			<input type="submit" value="Search">
+			<input class="button" type="submit" value="Search">
 			</form>
 
-		<br>
 
-			<form action="search_query_end.php" method="get">
+
+			<form id="suffix" class="field" action="search_query_end.php" method="get">
 			Ends with: <input type="text" name="search"><br>
-			<input type="submit" value="Search">
+			<input class="button" type="submit" value="Search">
 			</form>
 
 		<br>
